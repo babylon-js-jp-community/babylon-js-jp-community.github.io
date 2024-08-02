@@ -25,4 +25,3 @@ features:
     link: https://forum.babylonjs.com/
     details: 英語メインで活発な交流が行われています
 ---
-
