@@ -15,6 +15,7 @@ export default defineConfig({
       {
         text: 'サイドバー',
         items: [
+          { text: "お役立ちリンク集", link: '/links' },
           { text: 'マークダウン記法例', link: '/markdown-examples' },
           { text: 'API 例', link: '/api-examples' }
         ]
