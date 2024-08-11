@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'ja-JP',
+  cleanUrls: true,
   title: "Babylon.js JP",
   description: "Babylon.js Japanese community website for developers",
   themeConfig: {
@@ -15,7 +17,9 @@ export default defineConfig({
       {
         text: 'サイドバー',
         items: [
+          { text: "カメラについて", link: '/cameras' },
           { text: "お役立ちリンク集", link: '/links' },
+          { text: "逆引きリファレンス", link: '/references' },
           { text: 'マークダウン記法例', link: '/markdown-examples' },
           { text: 'API 例', link: '/api-examples' }
         ]

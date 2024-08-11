@@ -12,7 +12,7 @@
 - [BabylonJS/Babylon.js: Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.](https://github.com/BabylonJS/Babylon.js): GitHub ソースコードです
 - [Babylon.js Sandbox - View glTF, glb, obj and babylon files](https://sandbox.babylonjs.com/): モデルビューアです
 - [Babylon.js Node Material Editor](https://nme.babylonjs.com/): ノードマテリアルエディタです
-- [(2) Babylon js - YouTube](https://www.youtube.com/@BabylonJSEngine): 公式 YouTube チャンネルです
+- [Babylon js - YouTube](https://www.youtube.com/@BabylonJSEngine): 公式 YouTube チャンネルです
 - [Babylon.js（@babylonjs）さん / X](https://x.com/babylonjs?lang=ja): 公式 X アカウントです
 
 ## Babylon.js 公式入門チュートリアルざっくり和訳 - Zenn
@@ -20,6 +20,7 @@
 [![](./resources/babylonjs-tutorial-jp.jpg)](https://zenn.dev/chomado/books/babylonjs-tutorial-ja)
 
 > Web ブラウザ上で(も) 3D モデルを作ったり動かせたりする JavaScript の WebGL ライブラリ Babylon.js (バビロン ジェイ エス) の公式入門チュートリアルをざっくり和訳しました。(2022/5/01 時点で第 5 章まで。逐一 残りも公開していきます)
+>
 > 著: ちょまどさん
 
 ## その他

@@ -11,8 +11,8 @@ hero:
       text: Babylon.js 勉強会とは？
       link: /what-is-babylonjs-study
     - theme: alt
-      text: Babylon.js 逆引きリファレンス
-      link: /api-examples
+      text: 逆引きリファレンス
+      link: /references
 
 features:
   - title: Tips 集➹
