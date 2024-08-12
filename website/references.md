@@ -174,3 +174,4 @@ scene.onBeforeRenderObservable.add(() => {
 ```
 
 - [サンプルプレイグラウンド](https://playground.babylonjs.com/#DL4Y46)
+- [Device Source Manager | Babylon.js Documentation](https://doc.babylonjs.com/features/featuresDeepDive/input/deviceSourceManager)
