@@ -110,3 +110,67 @@ camera.keysRight = ["D".charCodeAt(0)];
 ```
 
 - [サンプルプレイグラウンド](https://playground.babylonjs.com/#9T8WG5)
+
+## キーボード入力でポリゴンを移動させたい {#move-by-keyboard}
+
+```js
+const deviceSourceManager = new DeviceSourceManager(scene.getEngine());
+let movingForward = false;
+let movingBackward = false;
+let movingLeft = false;
+let movingRight = false;
+deviceSourceManager.onDeviceConnectedObservable.add((device) => {
+  if (device.deviceType === DeviceType.Keyboard) {
+    device.onInputChangedObservable.add((event) => {
+      if (event.metaKey) {
+        return;
+      }
+
+      if (event.type === "keydown") {
+        if (event.key === "w") {
+          movingForward = true;
+        }
+        if (event.key === "a") {
+          movingLeft = true;
+        }
+        if (event.key === "s") {
+          movingBackward = true;
+        }
+        if (event.key === "d") {
+          movingRight = true;
+        }
+      } else if (event.type === "keyup") {
+        if (event.key === "w") {
+          movingForward = false;
+        }
+        if (event.key === "a") {
+          movingLeft = false;
+        }
+        if (event.key === "s") {
+          movingBackward = false;
+        }
+        if (event.key === "d") {
+          movingRight = false;
+        }
+      }
+    });
+  }
+});
+scene.onBeforeRenderObservable.add(() => {
+  const speed = 0.01;
+  if (movingForward) {
+    mesh.position.z -= speed;
+  }
+  if (movingBackward) {
+    mesh.position.z += speed;
+  }
+  if (movingLeft) {
+    mesh.position.x += speed;
+  }
+  if (movingRight) {
+    mesh.position.x -= speed;
+  }
+});
+```
+
+- [サンプルプレイグラウンド](https://playground.babylonjs.com/#DL4Y46)
